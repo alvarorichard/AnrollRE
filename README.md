@@ -1,6 +1,6 @@
 # AnrollRE
 
-# how to run the code
+### how to run the code
 ```bash
 go run .
 ```
