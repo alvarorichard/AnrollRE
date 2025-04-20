@@ -31,6 +31,7 @@ type SearchTermBody struct {
 	GenericPath  string `json:"generic_path"`
 }
 
+
 func (s *scraper) search(term string) []SearchTermBody {
 	url := fmt.Sprintf("%s/data?q=%s", baseUrl, term)
 	req, _ := http.NewRequest(http.MethodGet, url, nil)
