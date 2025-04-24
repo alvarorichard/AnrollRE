@@ -7,7 +7,10 @@ import (
 
 func main() {
 	s := newScraper()
-	animes := s.search("black")
+	var searchQuery string
+	fmt.Println("Enter the anime you want to search for:")
+	fmt.Scan(&searchQuery)
+	animes := s.search(searchQuery)
 	for i, anime := range animes {
 		fmt.Printf("%d - Title: %s\n", i, anime.Title)
 	}
